@@ -1,2 +1,2 @@
-# labs-ios
+# Overview
 QuickBlox iOS experimental features
