@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pwO-vU-CeC">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="32N-qV-HiW">
+            <objects>
+                <tableViewController id="QuU-MM-NP2" customClass="LinksViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tcf-ce-uTr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OGPreviewCellIdentifier" rowHeight="160" id="jZA-H3-yrb" customClass="OGPreviewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="160"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jZA-H3-yrb" id="Hz0-fB-2uc">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="159.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hjS-za-f2w">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="159.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="quickblox.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-LT-t2T">
+                                            <rect key="frame" x="54" y="125" width="538" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="rV0-Mz-Mly"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Flc-WO-e67">
+                                            <rect key="frame" x="8" y="118" width="38" height="36"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="38" id="oTx-Ls-Xr6"/>
+                                                <constraint firstAttribute="height" constant="36" id="wGv-u2-xkX"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OIG-Dl-zye">
+                                            <rect key="frame" x="8" y="70" width="584" height="47"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="47" id="fP8-ac-kYn"/>
+                                            </constraints>
+                                            <string key="text">Quickblox is an app development and consultancy company, creating apps and building frameworks for companies all over the globe. Even ones that have appeared in Apple commercials. But the repetitive exercise of creating the same functionality o</string>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NP-iG-qnD">
+                                            <rect key="frame" x="8" y="41" width="584" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="DV6-RC-MDT"/>
+                                            </constraints>
+                                            <string key="text">The calling and messaging developer toolkit for every platform. 
+Already powering over 25,000 applications.</string>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="OIG-Dl-zye" secondAttribute="trailing" constant="8" id="9NK-nA-pgz"/>
+                                        <constraint firstItem="Flc-WO-e67" firstAttribute="leading" secondItem="Hz0-fB-2uc" secondAttribute="leading" constant="8" id="9Ua-DP-cWG"/>
+                                        <constraint firstItem="OIG-Dl-zye" firstAttribute="leading" secondItem="Hz0-fB-2uc" secondAttribute="leading" constant="8" id="9Vc-QH-wRG"/>
+                                        <constraint firstAttribute="bottom" secondItem="Flc-WO-e67" secondAttribute="bottom" constant="5.5" id="9j9-Md-Uu9"/>
+                                        <constraint firstItem="n7a-LT-t2T" firstAttribute="leading" secondItem="Flc-WO-e67" secondAttribute="trailing" constant="8" id="Bnx-B7-JG2"/>
+                                        <constraint firstAttribute="trailing" secondItem="4NP-iG-qnD" secondAttribute="trailing" constant="8" id="M78-CI-N60"/>
+                                        <constraint firstItem="hjS-za-f2w" firstAttribute="leading" secondItem="Hz0-fB-2uc" secondAttribute="leading" id="RBr-Nx-rlo"/>
+                                        <constraint firstAttribute="trailing" secondItem="hjS-za-f2w" secondAttribute="trailing" id="cfc-iy-xBc"/>
+                                        <constraint firstAttribute="trailing" secondItem="n7a-LT-t2T" secondAttribute="trailing" constant="8" id="fsS-r2-dl9"/>
+                                        <constraint firstItem="4NP-iG-qnD" firstAttribute="leading" secondItem="Hz0-fB-2uc" secondAttribute="leading" constant="8" id="i1U-zK-p5e"/>
+                                        <constraint firstItem="OIG-Dl-zye" firstAttribute="top" secondItem="4NP-iG-qnD" secondAttribute="bottom" constant="8" id="ixJ-qR-tOx"/>
+                                        <constraint firstAttribute="bottom" secondItem="hjS-za-f2w" secondAttribute="bottom" id="nDD-QU-bTW"/>
+                                        <constraint firstAttribute="bottom" secondItem="n7a-LT-t2T" secondAttribute="bottom" constant="13.5" id="qib-hY-dpv"/>
+                                        <constraint firstItem="Flc-WO-e67" firstAttribute="top" secondItem="OIG-Dl-zye" secondAttribute="bottom" constant="1" id="rWQ-bM-1CC"/>
+                                        <constraint firstItem="hjS-za-f2w" firstAttribute="top" secondItem="Hz0-fB-2uc" secondAttribute="top" id="wKL-9t-AFp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ogDescription" destination="OIG-Dl-zye" id="tCX-oU-bp1"/>
+                                    <outlet property="ogSiteName" destination="n7a-LT-t2T" id="PYa-az-MSC"/>
+                                    <outlet property="ogTitle" destination="4NP-iG-qnD" id="OOx-5V-xPv"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QuU-MM-NP2" id="aFx-rc-T8l"/>
+                            <outlet property="delegate" destination="QuU-MM-NP2" id="6s8-WN-xgB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="fXz-gC-tO7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSq-gg-rEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="405" y="384"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h2E-cd-feM">
+            <objects>
+                <navigationController id="pwO-vU-CeC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tO9-qS-Vea">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="QuU-MM-NP2" kind="relationship" relationship="rootViewController" id="lh6-q2-7Ae"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRz-4o-TmR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-415" y="384"/>
+        </scene>
+    </scenes>
+</document>

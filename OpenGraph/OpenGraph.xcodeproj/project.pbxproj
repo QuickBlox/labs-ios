@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB035D6B1C91E408009E9AD2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035D6A1C91E408009E9AD2 /* main.m */; };
+		FB035D6E1C91E408009E9AD2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035D6D1C91E408009E9AD2 /* AppDelegate.m */; };
+		FB035D741C91E408009E9AD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB035D721C91E408009E9AD2 /* Main.storyboard */; };
+		FB035D761C91E408009E9AD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB035D751C91E408009E9AD2 /* Assets.xcassets */; };
+		FB035D791C91E408009E9AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB035D771C91E408009E9AD2 /* LaunchScreen.storyboard */; };
+		FB035D841C91E408009E9AD2 /* OpenGraphTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035D831C91E408009E9AD2 /* OpenGraphTests.m */; };
+		FB035D8F1C91E408009E9AD2 /* OpenGraphUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035D8E1C91E408009E9AD2 /* OpenGraphUITests.m */; };
+		FB035DA31C91E4B3009E9AD2 /* HTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035D9E1C91E4B3009E9AD2 /* HTMLDocument.m */; };
+		FB035DA41C91E4B3009E9AD2 /* HTMLNode+XPath.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035DA01C91E4B3009E9AD2 /* HTMLNode+XPath.m */; };
+		FB035DA51C91E4B3009E9AD2 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035DA21C91E4B3009E9AD2 /* HTMLNode.m */; };
+		FB035DAA1C91E554009E9AD2 /* LinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035DA91C91E554009E9AD2 /* LinksViewController.m */; };
+		FB035DAF1C91E596009E9AD2 /* OGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035DAE1C91E596009E9AD2 /* OGModel.m */; };
+		FB035DB21C91EEAC009E9AD2 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB035DB11C91EEAC009E9AD2 /* libxml2.tbd */; };
+		FB035DB51C91EF96009E9AD2 /* OGPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035DB41C91EF96009E9AD2 /* OGPreviewCell.m */; };
+		FB035DBC1C91F782009E9AD2 /* OGGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = FB035DBB1C91F782009E9AD2 /* OGGenerator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB035D801C91E408009E9AD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB035D5E1C91E408009E9AD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB035D651C91E408009E9AD2;
+			remoteInfo = OpenGraph;
+		};
+		FB035D8B1C91E408009E9AD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB035D5E1C91E408009E9AD2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB035D651C91E408009E9AD2;
+			remoteInfo = OpenGraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB035D661C91E408009E9AD2 /* OpenGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB035D6A1C91E408009E9AD2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB035D6C1C91E408009E9AD2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB035D6D1C91E408009E9AD2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB035D731C91E408009E9AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB035D751C91E408009E9AD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB035D781C91E408009E9AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB035D7A1C91E408009E9AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB035D7F1C91E408009E9AD2 /* OpenGraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB035D831C91E408009E9AD2 /* OpenGraphTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGraphTests.m; sourceTree = "<group>"; };
+		FB035D851C91E408009E9AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB035D8A1C91E408009E9AD2 /* OpenGraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenGraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB035D8E1C91E408009E9AD2 /* OpenGraphUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGraphUITests.m; sourceTree = "<group>"; };
+		FB035D901C91E408009E9AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB035D9D1C91E4B3009E9AD2 /* HTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLDocument.h; sourceTree = "<group>"; };
+		FB035D9E1C91E4B3009E9AD2 /* HTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLDocument.m; sourceTree = "<group>"; };
+		FB035D9F1C91E4B3009E9AD2 /* HTMLNode+XPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HTMLNode+XPath.h"; sourceTree = "<group>"; };
+		FB035DA01C91E4B3009E9AD2 /* HTMLNode+XPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HTMLNode+XPath.m"; sourceTree = "<group>"; };
+		FB035DA11C91E4B3009E9AD2 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		FB035DA21C91E4B3009E9AD2 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		FB035DA81C91E554009E9AD2 /* LinksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinksViewController.h; sourceTree = "<group>"; };
+		FB035DA91C91E554009E9AD2 /* LinksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinksViewController.m; sourceTree = "<group>"; };
+		FB035DAD1C91E596009E9AD2 /* OGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGModel.h; sourceTree = "<group>"; };
+		FB035DAE1C91E596009E9AD2 /* OGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGModel.m; sourceTree = "<group>"; };
+		FB035DB11C91EEAC009E9AD2 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		FB035DB31C91EF96009E9AD2 /* OGPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGPreviewCell.h; sourceTree = "<group>"; };
+		FB035DB41C91EF96009E9AD2 /* OGPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGPreviewCell.m; sourceTree = "<group>"; };
+		FB035DBA1C91F782009E9AD2 /* OGGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGGenerator.h; sourceTree = "<group>"; };
+		FB035DBB1C91F782009E9AD2 /* OGGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OGGenerator.m; sourceTree = "<group>"; };
+		FB035DC01C921EEB009E9AD2 /* OpenGraphProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGraphProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB035D631C91E408009E9AD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB035DB21C91EEAC009E9AD2 /* libxml2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB035D7C1C91E408009E9AD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB035D871C91E408009E9AD2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB035D5D1C91E408009E9AD2 = {
+			isa = PBXGroup;
+			children = (
+				FB035DB11C91EEAC009E9AD2 /* libxml2.tbd */,
+				FB035D681C91E408009E9AD2 /* OpenGraph */,
+				FB035D821C91E408009E9AD2 /* OpenGraphTests */,
+				FB035D8D1C91E408009E9AD2 /* OpenGraphUITests */,
+				FB035D671C91E408009E9AD2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB035D671C91E408009E9AD2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB035D661C91E408009E9AD2 /* OpenGraph.app */,
+				FB035D7F1C91E408009E9AD2 /* OpenGraphTests.xctest */,
+				FB035D8A1C91E408009E9AD2 /* OpenGraphUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB035D681C91E408009E9AD2 /* OpenGraph */ = {
+			isa = PBXGroup;
+			children = (
+				FB035DA61C91E511009E9AD2 /* Classes */,
+				FB035D9C1C91E4B3009E9AD2 /* HTMLParser */,
+				FB035D6C1C91E408009E9AD2 /* AppDelegate.h */,
+				FB035D6D1C91E408009E9AD2 /* AppDelegate.m */,
+				FB035D721C91E408009E9AD2 /* Main.storyboard */,
+				FB035D751C91E408009E9AD2 /* Assets.xcassets */,
+				FB035D771C91E408009E9AD2 /* LaunchScreen.storyboard */,
+				FB035D7A1C91E408009E9AD2 /* Info.plist */,
+				FB035D691C91E408009E9AD2 /* Supporting Files */,
+			);
+			path = OpenGraph;
+			sourceTree = "<group>";
+		};
+		FB035D691C91E408009E9AD2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB035D6A1C91E408009E9AD2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB035D821C91E408009E9AD2 /* OpenGraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB035D831C91E408009E9AD2 /* OpenGraphTests.m */,
+				FB035D851C91E408009E9AD2 /* Info.plist */,
+			);
+			path = OpenGraphTests;
+			sourceTree = "<group>";
+		};
+		FB035D8D1C91E408009E9AD2 /* OpenGraphUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB035D8E1C91E408009E9AD2 /* OpenGraphUITests.m */,
+				FB035D901C91E408009E9AD2 /* Info.plist */,
+			);
+			path = OpenGraphUITests;
+			sourceTree = "<group>";
+		};
+		FB035D9C1C91E4B3009E9AD2 /* HTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				FB035D9D1C91E4B3009E9AD2 /* HTMLDocument.h */,
+				FB035D9E1C91E4B3009E9AD2 /* HTMLDocument.m */,
+				FB035D9F1C91E4B3009E9AD2 /* HTMLNode+XPath.h */,
+				FB035DA01C91E4B3009E9AD2 /* HTMLNode+XPath.m */,
+				FB035DA11C91E4B3009E9AD2 /* HTMLNode.h */,
+				FB035DA21C91E4B3009E9AD2 /* HTMLNode.m */,
+			);
+			path = HTMLParser;
+			sourceTree = "<group>";
+		};
+		FB035DA61C91E511009E9AD2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FB035DB91C91F76C009E9AD2 /* OGGenerator */,
+				FB035DAB1C91E57D009E9AD2 /* Views */,
+				FB035DAC1C91E57D009E9AD2 /* Models */,
+				FB035DA71C91E533009E9AD2 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FB035DA71C91E533009E9AD2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB035DA81C91E554009E9AD2 /* LinksViewController.h */,
+				FB035DA91C91E554009E9AD2 /* LinksViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB035DAB1C91E57D009E9AD2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB035DB01C91E5B8009E9AD2 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB035DAC1C91E57D009E9AD2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB035DAD1C91E596009E9AD2 /* OGModel.h */,
+				FB035DAE1C91E596009E9AD2 /* OGModel.m */,
+				FB035DC01C921EEB009E9AD2 /* OpenGraphProtocol.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB035DB01C91E5B8009E9AD2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB035DB31C91EF96009E9AD2 /* OGPreviewCell.h */,
+				FB035DB41C91EF96009E9AD2 /* OGPreviewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FB035DB91C91F76C009E9AD2 /* OGGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				FB035DBA1C91F782009E9AD2 /* OGGenerator.h */,
+				FB035DBB1C91F782009E9AD2 /* OGGenerator.m */,
+			);
+			path = OGGenerator;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB035D651C91E408009E9AD2 /* OpenGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB035D931C91E408009E9AD2 /* Build configuration list for PBXNativeTarget "OpenGraph" */;
+			buildPhases = (
+				FB035D621C91E408009E9AD2 /* Sources */,
+				FB035D631C91E408009E9AD2 /* Frameworks */,
+				FB035D641C91E408009E9AD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGraph;
+			productName = OpenGraph;
+			productReference = FB035D661C91E408009E9AD2 /* OpenGraph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB035D7E1C91E408009E9AD2 /* OpenGraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB035D961C91E408009E9AD2 /* Build configuration list for PBXNativeTarget "OpenGraphTests" */;
+			buildPhases = (
+				FB035D7B1C91E408009E9AD2 /* Sources */,
+				FB035D7C1C91E408009E9AD2 /* Frameworks */,
+				FB035D7D1C91E408009E9AD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB035D811C91E408009E9AD2 /* PBXTargetDependency */,
+			);
+			name = OpenGraphTests;
+			productName = OpenGraphTests;
+			productReference = FB035D7F1C91E408009E9AD2 /* OpenGraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB035D891C91E408009E9AD2 /* OpenGraphUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB035D991C91E408009E9AD2 /* Build configuration list for PBXNativeTarget "OpenGraphUITests" */;
+			buildPhases = (
+				FB035D861C91E408009E9AD2 /* Sources */,
+				FB035D871C91E408009E9AD2 /* Frameworks */,
+				FB035D881C91E408009E9AD2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB035D8C1C91E408009E9AD2 /* PBXTargetDependency */,
+			);
+			name = OpenGraphUITests;
+			productName = OpenGraphUITests;
+			productReference = FB035D8A1C91E408009E9AD2 /* OpenGraphUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB035D5E1C91E408009E9AD2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Andrey Ivanov";
+				TargetAttributes = {
+					FB035D651C91E408009E9AD2 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					FB035D7E1C91E408009E9AD2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FB035D651C91E408009E9AD2;
+					};
+					FB035D891C91E408009E9AD2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = FB035D651C91E408009E9AD2;
+					};
+				};
+			};
+			buildConfigurationList = FB035D611C91E408009E9AD2 /* Build configuration list for PBXProject "OpenGraph" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB035D5D1C91E408009E9AD2;
+			productRefGroup = FB035D671C91E408009E9AD2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB035D651C91E408009E9AD2 /* OpenGraph */,
+				FB035D7E1C91E408009E9AD2 /* OpenGraphTests */,
+				FB035D891C91E408009E9AD2 /* OpenGraphUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB035D641C91E408009E9AD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB035D791C91E408009E9AD2 /* LaunchScreen.storyboard in Resources */,
+				FB035D761C91E408009E9AD2 /* Assets.xcassets in Resources */,
+				FB035D741C91E408009E9AD2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB035D7D1C91E408009E9AD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB035D881C91E408009E9AD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB035D621C91E408009E9AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB035DAF1C91E596009E9AD2 /* OGModel.m in Sources */,
+				FB035DA31C91E4B3009E9AD2 /* HTMLDocument.m in Sources */,
+				FB035DB51C91EF96009E9AD2 /* OGPreviewCell.m in Sources */,
+				FB035DA51C91E4B3009E9AD2 /* HTMLNode.m in Sources */,
+				FB035DBC1C91F782009E9AD2 /* OGGenerator.m in Sources */,
+				FB035DAA1C91E554009E9AD2 /* LinksViewController.m in Sources */,
+				FB035D6E1C91E408009E9AD2 /* AppDelegate.m in Sources */,
+				FB035DA41C91E4B3009E9AD2 /* HTMLNode+XPath.m in Sources */,
+				FB035D6B1C91E408009E9AD2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB035D7B1C91E408009E9AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB035D841C91E408009E9AD2 /* OpenGraphTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB035D861C91E408009E9AD2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB035D8F1C91E408009E9AD2 /* OpenGraphUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB035D811C91E408009E9AD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB035D651C91E408009E9AD2 /* OpenGraph */;
+			targetProxy = FB035D801C91E408009E9AD2 /* PBXContainerItemProxy */;
+		};
+		FB035D8C1C91E408009E9AD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB035D651C91E408009E9AD2 /* OpenGraph */;
+			targetProxy = FB035D8B1C91E408009E9AD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB035D721C91E408009E9AD2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB035D731C91E408009E9AD2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB035D771C91E408009E9AD2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB035D781C91E408009E9AD2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB035D911C91E408009E9AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB035D921C91E408009E9AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB035D941C91E408009E9AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "\"$(SDKROOT)/usr/include/libxml2\"";
+				INFOPLIST_FILE = OpenGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AndreyIvanov.OpenGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB035D951C91E408009E9AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = "\"$(SDKROOT)/usr/include/libxml2\"";
+				INFOPLIST_FILE = OpenGraph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AndreyIvanov.OpenGraph;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FB035D971C91E408009E9AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OpenGraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AndreyIvanov.OpenGraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGraph.app/OpenGraph";
+			};
+			name = Debug;
+		};
+		FB035D981C91E408009E9AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OpenGraphTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AndreyIvanov.OpenGraphTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenGraph.app/OpenGraph";
+			};
+			name = Release;
+		};
+		FB035D9A1C91E408009E9AD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenGraphUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AndreyIvanov.OpenGraphUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenGraph;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FB035D9B1C91E408009E9AD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OpenGraphUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AndreyIvanov.OpenGraphUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OpenGraph;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB035D611C91E408009E9AD2 /* Build configuration list for PBXProject "OpenGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB035D911C91E408009E9AD2 /* Debug */,
+				FB035D921C91E408009E9AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB035D931C91E408009E9AD2 /* Build configuration list for PBXNativeTarget "OpenGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB035D941C91E408009E9AD2 /* Debug */,
+				FB035D951C91E408009E9AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB035D961C91E408009E9AD2 /* Build configuration list for PBXNativeTarget "OpenGraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB035D971C91E408009E9AD2 /* Debug */,
+				FB035D981C91E408009E9AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB035D991C91E408009E9AD2 /* Build configuration list for PBXNativeTarget "OpenGraphUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB035D9A1C91E408009E9AD2 /* Debug */,
+				FB035D9B1C91E408009E9AD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB035D5E1C91E408009E9AD2 /* Project object */;
+}
