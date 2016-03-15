@@ -14,7 +14,9 @@
 + (instancetype)newWithText:(NSString *)text context:(MessagesContext *)context {
     
     return [super newWithComponent:
-            
+            /**
+             *  Insets
+             */
             [CKInsetComponent newWithInsets:{.top = 10, .bottom = 5, .left = 60, .right = 10}
                                   component:
              [CKStackLayoutComponent
