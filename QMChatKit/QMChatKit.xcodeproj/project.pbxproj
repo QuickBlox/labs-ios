@@ -10,7 +10,6 @@
 		48D6C86C45618E3305C99AF1 /* libPods-QMChatKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDAF7F492654A25F8870D77 /* libPods-QMChatKit.a */; };
 		FB8613071C98627A00E9D40A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8613061C98627A00E9D40A /* main.m */; };
 		FB86130A1C98627A00E9D40A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8613091C98627A00E9D40A /* AppDelegate.m */; };
-		FB86130D1C98627A00E9D40A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB86130C1C98627A00E9D40A /* ViewController.m */; };
 		FB8613101C98627A00E9D40A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB86130E1C98627A00E9D40A /* Main.storyboard */; };
 		FB8613121C98627A00E9D40A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8613111C98627A00E9D40A /* Assets.xcassets */; };
 		FB8613151C98627A00E9D40A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8613131C98627A00E9D40A /* LaunchScreen.storyboard */; };
@@ -49,8 +48,6 @@
 		FB8613061C98627A00E9D40A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB8613081C98627A00E9D40A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB8613091C98627A00E9D40A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB86130B1C98627A00E9D40A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FB86130C1C98627A00E9D40A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FB86130F1C98627A00E9D40A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB8613111C98627A00E9D40A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB8613141C98627A00E9D40A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -145,8 +142,6 @@
 			children = (
 				FB8613081C98627A00E9D40A /* AppDelegate.h */,
 				FB8613091C98627A00E9D40A /* AppDelegate.m */,
-				FB86130B1C98627A00E9D40A /* ViewController.h */,
-				FB86130C1C98627A00E9D40A /* ViewController.m */,
 				FB8613391C9863F000E9D40A /* ChatCollectionViewController.h */,
 				FB86133A1C9863F000E9D40A /* ChatCollectionViewController.mm */,
 				FB86130E1C98627A00E9D40A /* Main.storyboard */,
@@ -376,7 +371,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB86133B1C9863F000E9D40A /* ChatCollectionViewController.mm in Sources */,
-				FB86130D1C98627A00E9D40A /* ViewController.m in Sources */,
 				FB8613441C98668500E9D40A /* QBChatMessage.m in Sources */,
 				FB86130A1C98627A00E9D40A /* AppDelegate.m in Sources */,
 				FB8613411C98662E00E9D40A /* MessagesModelController.m in Sources */,

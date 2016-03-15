@@ -13,6 +13,9 @@
 
 + (instancetype)newWithMessage:(QBChatMessage *)message context:(MessagesContext *)context {
     
+    CKComponentScope scope(self);
+    const BOOL revealAnswer = [scope.state() boolValue];
+    
     return nil;
     
 }

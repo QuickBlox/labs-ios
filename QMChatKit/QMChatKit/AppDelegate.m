@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ChatCollectionViewController.h"
 
 @interface AppDelegate ()
 
@@ -14,8 +15,19 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    [flowLayout setScrollDirection:UICollectionViewScrollDirectionVertical];
+    [flowLayout setMinimumInteritemSpacing:0];
+    [flowLayout setMinimumLineSpacing:0];
+    
+    ChatCollectionViewController *chatViewController = [[ChatCollectionViewController alloc] initWithCollectionViewLayout:flowLayout];
+    
+    [_window setRootViewController:[[UINavigationController alloc] initWithRootViewController:chatViewController]];
+    [_window makeKeyAndVisible];
     // Override point for customization after application launch.
     return YES;
 }

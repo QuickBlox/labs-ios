@@ -30,7 +30,11 @@
     self = [super initWithCollectionViewLayout:layout];
     if (self) {
         
-         _sizeRangeProvider = [CKComponentFlexibleSizeRangeProvider providerWithFlexibility:CKComponentSizeRangeFlexibleHeight];
+        _sizeRangeProvider = [CKComponentFlexibleSizeRangeProvider providerWithFlexibility:CKComponentSizeRangeFlexibleHeight];
+        _messagesModelController = [[MessagesModelController alloc] init];
+        
+        self.title = @"Chat";
+        self.navigationItem.prompt = @"Test Component kit";
     }
     
     return self;
@@ -42,19 +46,21 @@
     self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.delegate = self;
     
-    MessagesContext *messagesContext = [[MessagesContext alloc] init];
+    MessagesContext *context = [[MessagesContext alloc] init];
     
     _dataSource = [[CKCollectionViewDataSource alloc] initWithCollectionView:self.collectionView
                                                  supplementaryViewDataSource:nil
                                                            componentProvider:[self class]
-                                                                     context:messagesContext
+                                                                     context:context
                                                    cellConfigurationFunction:nil];
     
     // Insert the initial section
     CKArrayControllerSections sections;
     sections.insert(0);
     [_dataSource enqueueChangeset:{sections, {}} constrainedSize:{}];
-    [self _enqueuePage:[_messagesModelController fetchNewMessagesPageWithCount:4]];
+    
+    MessagesPage *firstPage = [_messagesModelController fetchNewMessagesPageWithCount:4];
+    [self _enqueuePage:firstPage];
     
 }
 
@@ -69,8 +75,33 @@
         items.insert([NSIndexPath indexPathForRow:position + i inSection:0], messages[i]);
     }
     
+    CKSizeRange constrainedSize = [_sizeRangeProvider sizeRangeForBoundingSize:self.collectionView.bounds.size];
+    
     [_dataSource enqueueChangeset:{{}, items}
-                  constrainedSize:[_sizeRangeProvider sizeRangeForBoundingSize:self.collectionView.bounds.size]];
+                  constrainedSize:constrainedSize];
+}
+
+#pragma mark - UICollectionViewDelegateFlowLayout
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return [_dataSource sizeForItemAtIndexPath:indexPath];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView
+       willDisplayCell:(UICollectionViewCell *)cell
+    forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [_dataSource announceWillAppearForItemInCell:cell];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView
+  didEndDisplayingCell:(UICollectionViewCell *)cell
+    forItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [_dataSource announceDidDisappearForItemInCell:cell];
 }
 
 #pragma mark - CKComponentProvider
