@@ -15,26 +15,27 @@
     
     return [super newWithComponent:
             
-            [CKInsetComponent newWithInsets:{.top = 70, .bottom = 25, .left = 20, .right = 20}
-                                  component: [CKStackLayoutComponent
-                                              newWithView:{}
-                                              size:{}
-                                              style:{}
-                                              children:{
-                                                  {
-                                                      [CKLabelComponent
-                                                       newWithLabelAttributes:{
-                                                           .string = text,
-                                                           .font = [UIFont fontWithName:@"Baskerville" size:17]
-                                                       }
-                                                       viewAttributes:{
-                                                           {@selector(setBackgroundColor:), [UIColor clearColor]},
-                                                           {@selector(setUserInteractionEnabled:), @NO},
-                                                       }
-                                                       size:{ }],
-                                                      .alignSelf = CKStackLayoutAlignSelfCenter
-                                                  },
-                                              }]]];
+            [CKInsetComponent newWithInsets:{.top = 10, .bottom = 5, .left = 60, .right = 10}
+                                  component:
+             [CKStackLayoutComponent
+              newWithView:{}
+              size:{}
+              style:{}
+              children:{
+                  {
+                      [CKLabelComponent
+                       newWithLabelAttributes:{
+                           .string = text,
+                           .font = [UIFont fontWithName:@"Baskerville" size:17]
+                       }
+                       viewAttributes:{
+                           {@selector(setBackgroundColor:), [UIColor colorWithRed:0.136 green:0.6521 blue:0.1201 alpha:1.0]},
+                           {@selector(setUserInteractionEnabled:), @NO},
+                       }
+                       size:{ }],
+                      .alignSelf = CKStackLayoutAlignSelfEnd
+                  },
+              }]]];
     
 }
 

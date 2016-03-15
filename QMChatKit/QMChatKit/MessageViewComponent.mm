@@ -18,9 +18,9 @@
 + (instancetype)newWithMessage:(QBChatMessage *)message context:(MessagesContext *)context {
     
     CKComponentScope scope(self);
-    //    const BOOL isIncomingMessage = [scope.state() boolValue];
     
     MessageViewComponent *messageViewComponent =
+    
     [super newWithComponent:
      [CKStackLayoutComponent
       newWithView:{

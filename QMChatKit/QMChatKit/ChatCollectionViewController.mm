@@ -59,7 +59,7 @@
     sections.insert(0);
     [_dataSource enqueueChangeset:{sections, {}} constrainedSize:{}];
     
-    MessagesPage *firstPage = [_messagesModelController fetchNewMessagesPageWithCount:10];
+    MessagesPage *firstPage = [_messagesModelController fetchNewMessagesPageWithCount:30];
     [self _enqueuePage:firstPage];
     
 }
@@ -121,7 +121,7 @@
     
     if (scrolledToBottomWithBuffer(scrollView.contentOffset, scrollView.contentSize, scrollView.contentInset, scrollView.bounds)) {
         
-        [self _enqueuePage:[_messagesModelController fetchNewMessagesPageWithCount:8]];
+        [self _enqueuePage:[_messagesModelController fetchNewMessagesPageWithCount:15]];
     }
 }
 

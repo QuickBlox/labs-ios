@@ -150,11 +150,6 @@
 				FB8613091C98627A00E9D40A /* AppDelegate.m */,
 				FB8613391C9863F000E9D40A /* ChatCollectionViewController.h */,
 				FB86133A1C9863F000E9D40A /* ChatCollectionViewController.mm */,
-				FB86130E1C98627A00E9D40A /* Main.storyboard */,
-				FB8613111C98627A00E9D40A /* Assets.xcassets */,
-				FB8613131C98627A00E9D40A /* LaunchScreen.storyboard */,
-				FB8613161C98627A00E9D40A /* Info.plist */,
-				FB8613051C98627A00E9D40A /* Supporting Files */,
 				FB86133C1C9865B200E9D40A /* MessagesContext.h */,
 				FB86133D1C9865B200E9D40A /* MessagesContext.m */,
 				FB86133F1C98662E00E9D40A /* MessagesModelController.h */,
@@ -169,6 +164,11 @@
 				FB86134C1C988F5500E9D40A /* QMIncomingMessageView.mm */,
 				FB86134E1C988F7100E9D40A /* QMOutgoingMessageView.h */,
 				FB86134F1C988F7100E9D40A /* QMOutgoingMessageView.mm */,
+				FB86130E1C98627A00E9D40A /* Main.storyboard */,
+				FB8613111C98627A00E9D40A /* Assets.xcassets */,
+				FB8613131C98627A00E9D40A /* LaunchScreen.storyboard */,
+				FB8613161C98627A00E9D40A /* Info.plist */,
+				FB8613051C98627A00E9D40A /* Supporting Files */,
 			);
 			path = QMChatKit;
 			sourceTree = "<group>";
