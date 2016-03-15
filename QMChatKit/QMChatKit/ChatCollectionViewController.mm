@@ -59,7 +59,7 @@
     sections.insert(0);
     [_dataSource enqueueChangeset:{sections, {}} constrainedSize:{}];
     
-    MessagesPage *firstPage = [_messagesModelController fetchNewMessagesPageWithCount:4];
+    MessagesPage *firstPage = [_messagesModelController fetchNewMessagesPageWithCount:10];
     [self _enqueuePage:firstPage];
     
 }

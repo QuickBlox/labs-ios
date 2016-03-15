@@ -21,6 +21,8 @@
 		FB8613441C98668500E9D40A /* QBChatMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8613431C98668500E9D40A /* QBChatMessage.m */; };
 		FB8613471C98669D00E9D40A /* MessagesPage.m in Sources */ = {isa = PBXBuildFile; fileRef = FB8613461C98669D00E9D40A /* MessagesPage.m */; };
 		FB86134A1C98706500E9D40A /* MessageViewComponent.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB8613491C98706500E9D40A /* MessageViewComponent.mm */; };
+		FB86134D1C988F5500E9D40A /* QMIncomingMessageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB86134C1C988F5500E9D40A /* QMIncomingMessageView.mm */; };
+		FB8613501C988F7100E9D40A /* QMOutgoingMessageView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB86134F1C988F7100E9D40A /* QMOutgoingMessageView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,10 @@
 		FB8613461C98669D00E9D40A /* MessagesPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesPage.m; sourceTree = "<group>"; };
 		FB8613481C98706500E9D40A /* MessageViewComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewComponent.h; sourceTree = "<group>"; };
 		FB8613491C98706500E9D40A /* MessageViewComponent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MessageViewComponent.mm; sourceTree = "<group>"; };
+		FB86134B1C988F5500E9D40A /* QMIncomingMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMIncomingMessageView.h; sourceTree = "<group>"; };
+		FB86134C1C988F5500E9D40A /* QMIncomingMessageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QMIncomingMessageView.mm; sourceTree = "<group>"; };
+		FB86134E1C988F7100E9D40A /* QMOutgoingMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMOutgoingMessageView.h; sourceTree = "<group>"; };
+		FB86134F1C988F7100E9D40A /* QMOutgoingMessageView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QMOutgoingMessageView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +165,10 @@
 				FB8613461C98669D00E9D40A /* MessagesPage.m */,
 				FB8613481C98706500E9D40A /* MessageViewComponent.h */,
 				FB8613491C98706500E9D40A /* MessageViewComponent.mm */,
+				FB86134B1C988F5500E9D40A /* QMIncomingMessageView.h */,
+				FB86134C1C988F5500E9D40A /* QMIncomingMessageView.mm */,
+				FB86134E1C988F7100E9D40A /* QMOutgoingMessageView.h */,
+				FB86134F1C988F7100E9D40A /* QMOutgoingMessageView.mm */,
 			);
 			path = QMChatKit;
 			sourceTree = "<group>";
@@ -373,6 +383,8 @@
 				FB86133B1C9863F000E9D40A /* ChatCollectionViewController.mm in Sources */,
 				FB8613441C98668500E9D40A /* QBChatMessage.m in Sources */,
 				FB86130A1C98627A00E9D40A /* AppDelegate.m in Sources */,
+				FB86134D1C988F5500E9D40A /* QMIncomingMessageView.mm in Sources */,
+				FB8613501C988F7100E9D40A /* QMOutgoingMessageView.mm in Sources */,
 				FB8613411C98662E00E9D40A /* MessagesModelController.m in Sources */,
 				FB8613071C98627A00E9D40A /* main.m in Sources */,
 				FB8613471C98669D00E9D40A /* MessagesPage.m in Sources */,
