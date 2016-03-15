@@ -10,12 +10,13 @@
 
 @implementation MessagesPage
 
-- (instancetype)initWithMessages:(NSArray *)messages position:(NSUInteger)position {
+- (instancetype)initWithMessages:(NSArray *)messages position:(NSInteger)position {
     
     self = [super init];
     if (self) {
         
-        
+        _messages = messages;
+        _position = position;
     }
     
     return self;

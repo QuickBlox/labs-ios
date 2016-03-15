@@ -10,9 +10,9 @@
 
 @interface MessagesPage : NSObject
 
-@property (strong, nonatomic) NSArray *messages;
-@property (assign, nonatomic) NSUInteger position;
+@property (strong, nonatomic, readonly) NSArray *messages;
+@property (assign, nonatomic, readonly) NSInteger position;
 
-- (instancetype)initWithMessages:(NSArray *)messages position:(NSUInteger)position;
+- (instancetype)initWithMessages:(NSArray *)messages position:(NSInteger)position;
 
 @end
