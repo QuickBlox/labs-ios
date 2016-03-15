@@ -18,7 +18,7 @@
 - (MessagesPage *)fetchNewMessagesPageWithCount:(NSUInteger)count {
     
     NSArray * messages = generateRandomMessages(count);
-    MessagesPage *messagesPage = [[MessagesPage alloc] initWithMessages:messages position:count];
+    MessagesPage *messagesPage = [[MessagesPage alloc] initWithMessages:messages position:_numberOfObjects];
     _numberOfObjects += count;
     
     return messagesPage;

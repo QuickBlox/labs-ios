@@ -69,7 +69,7 @@
     NSArray *messages = messagesPage.messages;
     NSInteger position = messagesPage.position;
     
-    // Convert the array of quotes to a valid changeset
+    // Convert the array of messages to a valid changeset
     CKArrayControllerInputItems items;
     for (NSInteger i = 0; i < [messages count]; i++) {
         items.insert([NSIndexPath indexPathForRow:position + i inSection:0], messages[i]);
