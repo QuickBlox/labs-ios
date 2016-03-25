@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Cqx-kk-2wS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--QMTagFieldView Example-->
+        <scene sceneID="zDN-p7-9wy">
+            <objects>
+                <tableViewController id="wY6-sB-nq7" customClass="ExampleTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Xsa-KZ-X7v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="QMExampleCell" id="cjZ-Yw-Gm9" customClass="QMExampleCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cjZ-Yw-Gm9" id="cZQ-uH-8vs">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgC-hI-HnG">
+                                            <rect key="frame" x="8" y="11" width="584" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="WgC-hI-HnG" firstAttribute="centerY" secondItem="cZQ-uH-8vs" secondAttribute="centerY" id="YIu-Pm-CzV"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="WgC-hI-HnG" secondAttribute="trailing" id="fDA-6t-13f"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="WgC-hI-HnG" secondAttribute="leading" id="zFp-AB-Jvc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="WgC-hI-HnG" id="feF-uW-Iwr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="wY6-sB-nq7" id="EU0-dO-ERw"/>
+                            <outlet property="delegate" destination="wY6-sB-nq7" id="jY5-bu-fHj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="QMTagFieldView Example" id="sSI-Z5-G9N"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mAe-Q4-q4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815" y="241"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qTC-tF-GiL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cqx-kk-2wS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OCv-hX-TVL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wY6-sB-nq7" kind="relationship" relationship="rootViewController" id="s3O-8H-to5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2h4-xS-mDO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3" y="241"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58002F7D1CA5C72900DCDBC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58002F7C1CA5C72900DCDBC4 /* main.m */; };
+		58002F801CA5C72900DCDBC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58002F7F1CA5C72900DCDBC4 /* AppDelegate.m */; };
+		58002F861CA5C72900DCDBC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58002F841CA5C72900DCDBC4 /* Main.storyboard */; };
+		58002F881CA5C72900DCDBC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58002F871CA5C72900DCDBC4 /* Assets.xcassets */; };
+		58002F8B1CA5C72900DCDBC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58002F891CA5C72900DCDBC4 /* LaunchScreen.storyboard */; };
+		58002F9C1CA5C77700DCDBC4 /* QMTagFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58002F951CA5C77700DCDBC4 /* QMTagFieldView.m */; };
+		58002F9D1CA5C77700DCDBC4 /* QMTagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58002F981CA5C77700DCDBC4 /* QMTagView.m */; };
+		58002F9E1CA5C77700DCDBC4 /* QMTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 58002F9B1CA5C77700DCDBC4 /* QMTextField.m */; };
+		58002FA01CA5C82800DCDBC4 /* QMTagFieldView.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58002F9F1CA5C82800DCDBC4 /* QMTagFieldView.xcassets */; };
+		58002FA31CA5C99200DCDBC4 /* ExampleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58002FA21CA5C99200DCDBC4 /* ExampleTableViewController.m */; };
+		58002FA71CA5CAC000DCDBC4 /* QMExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58002FA61CA5CAC000DCDBC4 /* QMExampleCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		58002F781CA5C72900DCDBC4 /* QMTagFieldViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QMTagFieldViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58002F7C1CA5C72900DCDBC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58002F7E1CA5C72900DCDBC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58002F7F1CA5C72900DCDBC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58002F851CA5C72900DCDBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58002F871CA5C72900DCDBC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58002F8A1CA5C72900DCDBC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58002F8C1CA5C72900DCDBC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58002F941CA5C77700DCDBC4 /* QMTagFieldView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTagFieldView.h; sourceTree = "<group>"; };
+		58002F951CA5C77700DCDBC4 /* QMTagFieldView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTagFieldView.m; sourceTree = "<group>"; };
+		58002F971CA5C77700DCDBC4 /* QMTagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTagView.h; sourceTree = "<group>"; };
+		58002F981CA5C77700DCDBC4 /* QMTagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTagView.m; sourceTree = "<group>"; };
+		58002F9A1CA5C77700DCDBC4 /* QMTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTextField.h; sourceTree = "<group>"; };
+		58002F9B1CA5C77700DCDBC4 /* QMTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QMTextField.m; sourceTree = "<group>"; };
+		58002F9F1CA5C82800DCDBC4 /* QMTagFieldView.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = QMTagFieldView.xcassets; path = ../../QMTagFieldView/QMTagFieldView.xcassets; sourceTree = "<group>"; };
+		58002FA11CA5C99200DCDBC4 /* ExampleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTableViewController.h; sourceTree = "<group>"; };
+		58002FA21CA5C99200DCDBC4 /* ExampleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTableViewController.m; sourceTree = "<group>"; };
+		58002FA51CA5CAC000DCDBC4 /* QMExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMExampleCell.h; path = QMExampleCell/QMExampleCell.h; sourceTree = "<group>"; };
+		58002FA61CA5CAC000DCDBC4 /* QMExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QMExampleCell.m; path = QMExampleCell/QMExampleCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58002F751CA5C72900DCDBC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58002F6F1CA5C72900DCDBC4 = {
+			isa = PBXGroup;
+			children = (
+				58002F7A1CA5C72900DCDBC4 /* QMTagFieldViewExample */,
+				58002F791CA5C72900DCDBC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58002F791CA5C72900DCDBC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58002F781CA5C72900DCDBC4 /* QMTagFieldViewExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58002F7A1CA5C72900DCDBC4 /* QMTagFieldViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				58002F921CA5C76700DCDBC4 /* QMTagFieldView */,
+				58002FA11CA5C99200DCDBC4 /* ExampleTableViewController.h */,
+				58002FA21CA5C99200DCDBC4 /* ExampleTableViewController.m */,
+				58002FA41CA5CA9A00DCDBC4 /* QMExampleCell */,
+				58002F7E1CA5C72900DCDBC4 /* AppDelegate.h */,
+				58002F7F1CA5C72900DCDBC4 /* AppDelegate.m */,
+				58002F841CA5C72900DCDBC4 /* Main.storyboard */,
+				58002F871CA5C72900DCDBC4 /* Assets.xcassets */,
+				58002F891CA5C72900DCDBC4 /* LaunchScreen.storyboard */,
+				58002F8C1CA5C72900DCDBC4 /* Info.plist */,
+				58002F7B1CA5C72900DCDBC4 /* Supporting Files */,
+			);
+			path = QMTagFieldViewExample;
+			sourceTree = "<group>";
+		};
+		58002F7B1CA5C72900DCDBC4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58002F7C1CA5C72900DCDBC4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58002F921CA5C76700DCDBC4 /* QMTagFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				58002F931CA5C77700DCDBC4 /* QMTagFieldView */,
+				58002F961CA5C77700DCDBC4 /* QMTagView */,
+				58002F991CA5C77700DCDBC4 /* QMTextField */,
+				58002F9F1CA5C82800DCDBC4 /* QMTagFieldView.xcassets */,
+			);
+			name = QMTagFieldView;
+			sourceTree = "<group>";
+		};
+		58002F931CA5C77700DCDBC4 /* QMTagFieldView */ = {
+			isa = PBXGroup;
+			children = (
+				58002F941CA5C77700DCDBC4 /* QMTagFieldView.h */,
+				58002F951CA5C77700DCDBC4 /* QMTagFieldView.m */,
+			);
+			name = QMTagFieldView;
+			path = ../../QMTagFieldView/QMTagFieldView;
+			sourceTree = "<group>";
+		};
+		58002F961CA5C77700DCDBC4 /* QMTagView */ = {
+			isa = PBXGroup;
+			children = (
+				58002F971CA5C77700DCDBC4 /* QMTagView.h */,
+				58002F981CA5C77700DCDBC4 /* QMTagView.m */,
+			);
+			name = QMTagView;
+			path = ../../QMTagFieldView/QMTagView;
+			sourceTree = "<group>";
+		};
+		58002F991CA5C77700DCDBC4 /* QMTextField */ = {
+			isa = PBXGroup;
+			children = (
+				58002F9A1CA5C77700DCDBC4 /* QMTextField.h */,
+				58002F9B1CA5C77700DCDBC4 /* QMTextField.m */,
+			);
+			name = QMTextField;
+			path = ../../QMTagFieldView/QMTextField;
+			sourceTree = "<group>";
+		};
+		58002FA41CA5CA9A00DCDBC4 /* QMExampleCell */ = {
+			isa = PBXGroup;
+			children = (
+				58002FA51CA5CAC000DCDBC4 /* QMExampleCell.h */,
+				58002FA61CA5CAC000DCDBC4 /* QMExampleCell.m */,
+			);
+			name = QMExampleCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58002F771CA5C72900DCDBC4 /* QMTagFieldViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58002F8F1CA5C72900DCDBC4 /* Build configuration list for PBXNativeTarget "QMTagFieldViewExample" */;
+			buildPhases = (
+				58002F741CA5C72900DCDBC4 /* Sources */,
+				58002F751CA5C72900DCDBC4 /* Frameworks */,
+				58002F761CA5C72900DCDBC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QMTagFieldViewExample;
+			productName = QMTagFieldViewExample;
+			productReference = 58002F781CA5C72900DCDBC4 /* QMTagFieldViewExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58002F701CA5C72900DCDBC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Vitaliy Gorbachov";
+				TargetAttributes = {
+					58002F771CA5C72900DCDBC4 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 58002F731CA5C72900DCDBC4 /* Build configuration list for PBXProject "QMTagFieldViewExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58002F6F1CA5C72900DCDBC4;
+			productRefGroup = 58002F791CA5C72900DCDBC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58002F771CA5C72900DCDBC4 /* QMTagFieldViewExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58002F761CA5C72900DCDBC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58002FA01CA5C82800DCDBC4 /* QMTagFieldView.xcassets in Resources */,
+				58002F8B1CA5C72900DCDBC4 /* LaunchScreen.storyboard in Resources */,
+				58002F881CA5C72900DCDBC4 /* Assets.xcassets in Resources */,
+				58002F861CA5C72900DCDBC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58002F741CA5C72900DCDBC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58002FA31CA5C99200DCDBC4 /* ExampleTableViewController.m in Sources */,
+				58002F9E1CA5C77700DCDBC4 /* QMTextField.m in Sources */,
+				58002F801CA5C72900DCDBC4 /* AppDelegate.m in Sources */,
+				58002F7D1CA5C72900DCDBC4 /* main.m in Sources */,
+				58002F9C1CA5C77700DCDBC4 /* QMTagFieldView.m in Sources */,
+				58002F9D1CA5C77700DCDBC4 /* QMTagView.m in Sources */,
+				58002FA71CA5CAC000DCDBC4 /* QMExampleCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58002F841CA5C72900DCDBC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58002F851CA5C72900DCDBC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58002F891CA5C72900DCDBC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58002F8A1CA5C72900DCDBC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58002F8D1CA5C72900DCDBC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58002F8E1CA5C72900DCDBC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58002F901CA5C72900DCDBC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QMTagFieldViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VitaliyGorbachov.QMTagFieldViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58002F911CA5C72900DCDBC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QMTagFieldViewExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = VitaliyGorbachov.QMTagFieldViewExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58002F731CA5C72900DCDBC4 /* Build configuration list for PBXProject "QMTagFieldViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58002F8D1CA5C72900DCDBC4 /* Debug */,
+				58002F8E1CA5C72900DCDBC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58002F8F1CA5C72900DCDBC4 /* Build configuration list for PBXNativeTarget "QMTagFieldViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58002F901CA5C72900DCDBC4 /* Debug */,
+				58002F911CA5C72900DCDBC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58002F701CA5C72900DCDBC4 /* Project object */;
+}
