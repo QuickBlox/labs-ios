@@ -13,31 +13,90 @@
 
 + (instancetype)newWithText:(NSString *)text context:(MessagesContext *)context {
     
-    return [super newWithComponent:
-            /**
-             *  Insets
-             */
-            [CKInsetComponent newWithInsets:{.top = 10, .bottom = 5, .left = 60, .right = 10}
-                                  component:
-             [CKStackLayoutComponent
-              newWithView:{}
-              size:{}
-              style:{}
-              children:{
-                  {
-                      [CKLabelComponent
-                       newWithLabelAttributes:{
-                           .string = text,
-                           .font = [UIFont fontWithName:@"Baskerville" size:17]
-                       }
-                       viewAttributes:{
-                           {@selector(setBackgroundColor:), [UIColor colorWithRed:0.136 green:0.6521 blue:0.1201 alpha:1.0]},
-                           {@selector(setUserInteractionEnabled:), @NO},
-                       }
-                       size:{ }],
-                      .alignSelf = CKStackLayoutAlignSelfEnd
-                  },
-              }]]];
+    CKStackLayoutComponent *stackLayout =
+    [CKStackLayoutComponent
+     newWithView: {
+         
+     } size: {
+         
+     } style: {
+         
+     } children: {
+         {
+             { //Top label
+                 [CKLabelComponent
+                  newWithLabelAttributes: {
+                      
+                      .string = @"Andrey Ivanov",
+                      .font = [UIFont boldSystemFontOfSize:17]
+                      
+                  } viewAttributes: {
+                      
+                      {
+                          @selector(setUserInteractionEnabled:), @NO
+                      }
+                  
+                  } size: {
+                      
+                  }],
+                 
+                 .alignSelf = CKStackLayoutAlignSelfStart
+             }, // TopLabel end
+             { // MessageText
+                 
+                 [CKLabelComponent
+                  newWithLabelAttributes: {
+                      
+                      .string = text,
+                      .font = [UIFont fontWithName:@"Baskerville" size:17]
+                      
+                  } viewAttributes: {
+                      
+                      {
+//                          @selector(setBackgroundColor:), [UIColor colorWithRed:0.136 green:0.6521 blue:0.1201 alpha:1.0]
+//                          
+//                      },
+//                      {
+                          
+                          @selector(setUserInteractionEnabled:), @NO
+                      },
+                      
+                  } size: {
+                      
+                  }],
+                 
+                 .alignSelf = CKStackLayoutAlignSelfStart
+             }, // Message text end
+             { // bottom label
+                 
+                 [CKLabelComponent
+                  newWithLabelAttributes: {
+                      
+                      .string = @"11:54:65",
+                      .font = [UIFont fontWithName:@"Baskerville" size:17]
+                      
+                  } viewAttributes: {
+                      
+                      {
+//                          @selector(setBackgroundColor:), [UIColor colorWithRed:0.136 green:0.6521 blue:0.1201 alpha:1.0]
+//                          
+//                      },
+//                      {
+                          
+                          @selector(setUserInteractionEnabled:), @NO
+                      },
+                      
+                  } size: {
+                      
+                  }],
+                 .alignSelf = CKStackLayoutAlignSelfEnd
+             }
+         },
+     }];
+    
+    UIEdgeInsets insets = {.top = 5, .bottom = 5, .left = 5, .right = 5};
+    
+    return [super newWithComponent:[CKInsetComponent newWithInsets:insets component:stackLayout]];
     
 }
 

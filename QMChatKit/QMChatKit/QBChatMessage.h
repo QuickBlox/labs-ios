@@ -20,9 +20,24 @@
  */
 @property (nonatomic, copy) NSString *senderNick;
 
+/**
+ *  Unavailable for this class
+ */
 - (instancetype)init NS_UNAVAILABLE;
+
+/**
+ *  Unavailable for this class
+ */
 - (instancetype)new NS_UNAVAILABLE;
 
-- (instancetype)initWithSenderNick:(NSString *)sencerNick text:(NSString *)text;
+/**
+ *  Designated initializer
+ *
+ *  @param sencerNick Sender nick
+ *  @param text       Message text
+ *
+ *  @return QBChatMessage instance
+ */
+- (instancetype)initWithSenderNick:(NSString *)sencerNick text:(NSString *)text NS_DESIGNATED_INITIALIZER;
 
 @end

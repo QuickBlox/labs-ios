@@ -148,6 +148,7 @@ static NSArray *messagesList() {
                        }
                    ];
     });
+    
     return messages;
 }
 
