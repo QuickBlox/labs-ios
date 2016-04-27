@@ -98,15 +98,15 @@
                       
                       .attributedString = [[NSAttributedString alloc] initWithString:text],
                       .maximumNumberOfLines = static_cast<NSUInteger>([state boolValue] ? 0 : 1),
-                  
+                      
                   }
                   viewAttributes:{
-                          //CKComponentViewAttributeValue
-                          CKComponentTapGestureAttribute(@selector(didTapContinueReading)), {
-                              @selector(setBackgroundColor:),
-                              [state boolValue] ? [UIColor grayColor] : [UIColor colorWithRed:0.5 green:0.2496 blue:0.3252 alpha:1.0]
-                          }
-                    
+                      //CKComponentViewAttributeValue
+                      CKComponentTapGestureAttribute(@selector(didTapContinueReading)), {
+                          @selector(setBackgroundColor:),
+                          [state boolValue] ? [UIColor grayColor] : [UIColor colorWithRed:0.5 green:0.2496 blue:0.3252 alpha:1.0]
+                      }
+                      
                   }
                   accessibilityContext:{}
                   size:{}],
